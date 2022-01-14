@@ -1,0 +1,27 @@
+{
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "My Test Suite",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  },
+  "video": false,
+
+  
+    "env": {
+      "browserPermissions": {
+        "notifications": "allow",
+        "geolocation": "allow",
+        "camera": "allow",
+        "microphone": "allow",
+        "images": "allow",
+        "javascript": "allow",
+        "popups": "allow",
+        "plugins": "allow",
+        "cookies": "allow"
+      }
+    
+  }
+}

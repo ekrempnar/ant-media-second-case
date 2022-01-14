@@ -1,0 +1,20 @@
+{
+  "name": "ant-media-second-case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "cypress-browser-permissions": "^1.1.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-mochawesome-reporter": "^2.3.0"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
