@@ -24,8 +24,6 @@ const {
 const { cypressBrowserPermissionsPlugin } = require('cypress-browser-permissions')
 
 module.exports = (on, config) => {
-  addMatchImageSnapshotPlugin(on, config);
-  require('cypress-mochawesome-reporter/plugin')(on);
   config = cypressBrowserPermissionsPlugin(on, config)
 
   //
