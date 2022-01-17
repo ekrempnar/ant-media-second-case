@@ -14,7 +14,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
       - name: Generate Report
-        run: cd ant-media-second-case && npm run cy:report
+        run: npm run cy:report
       - name: Upload Report
         uses: actions/upload-artifact@v2
         with:
