@@ -13,3 +13,10 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
+      - name: Generate Report
+        run: cd ant-media-second-case && npm run cy:report
+      - name: Upload Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-report
+          path: ant-media-second-case/cypress/reports/
