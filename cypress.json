@@ -1,6 +1,6 @@
 {
     "reporter": "cypress-mochawesome-reporter",
-    "reporterOptions": {
+    "reporterOptions": { 
     "reportDir": "cypress/reports",
     "charts": true,
     "reportPageTitle": "My Test Suite",
