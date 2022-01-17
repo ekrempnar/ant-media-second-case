@@ -1,14 +1,21 @@
 {
-    "reporter": "cypress-mochawesome-reporter",
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": { 
-    "reportDir": "cypress/reports",
-    "charts": true,
-    "reportPageTitle": "My Test Suite",
-    "embeddedScreenshots": true,
-    "inlineAssets": true,
-    "chromeSecurity": false
-  },
-  "video": false,
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "charts": true,
+      "reportPageTitle": "My Test Suite",
+      "embeddedScreenshots": true,
+      "inlineAssets": true,
+      "chromeSecurity": false
+    },
+    "video": false,
 
   
     "env": {
@@ -24,5 +31,5 @@
         "cookies": "allow"
       }
     
-  }
+    }
 }
