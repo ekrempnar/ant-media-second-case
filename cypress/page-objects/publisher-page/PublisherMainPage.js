@@ -11,6 +11,10 @@ export class PublisherMainPage {
     checkIsPublisherPageOpened () {
         cy.url().should('eq',locators.publisherURL)
     }
+    selectScreenSharing(){
+        cy.get(locators.optionsButton).click()
+        cy.get(locators.selectScreenButton).should('have.text','Screen').click()
+    }
     startPublishing(){
         cy.get(locators.startPublishingButton).click()
     }

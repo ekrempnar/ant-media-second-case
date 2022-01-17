@@ -8,6 +8,8 @@ export class Locators {
     //Button Locator
     startPublishingButton = '#start_publish_button'
     stopPublishingButton = '#stop_publish_button'
+    optionsButton = '#options'
+    selectScreenButton = ':nth-child(4) > :nth-child(7)'
 
     //Alert Locator
     publishingAlert = '#broadcastingInfo'

@@ -5,7 +5,8 @@
     "charts": true,
     "reportPageTitle": "My Test Suite",
     "embeddedScreenshots": true,
-    "inlineAssets": true
+    "inlineAssets": true,
+    "chromeSecurity": false
   },
   "video": false,
 

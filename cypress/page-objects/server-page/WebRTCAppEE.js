@@ -10,6 +10,6 @@ export class WebRTCAppEE {
         cy.get(locators.webRTCDashboardText).should('contain', 'WebRTCAppEE')
     }
     checkStreamStatusFromServer(){
-        cy.get(locators.status).should('contain','Broadcasting')
+        cy.get(locators.statusMessage).should('contain','There is no stream at this time')
     }
 }

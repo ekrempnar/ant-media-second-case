@@ -20,7 +20,7 @@ export class Locators {
 
     //WebRTC Dashboard Locators
     webRTCDashboardText = '.navbar-brand'
-    status = '.mat-row > .cdk-column-status'
+    statusMessage = '#livestreams > p'
 
     //Left Menu Locators
     webRTCApp = ':nth-child(2) > a > .sidebar-normal'
