@@ -19,4 +19,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cypress-report
-          path: ant-media-second-case/cypress/reports/
+          path: cypress/reports/
