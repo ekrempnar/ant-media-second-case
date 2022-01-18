@@ -19,12 +19,12 @@ describe('Check is screen sharing failed case', () => {
         publisherMainPage.selectScreenSharing()
         cy.wait(1000)
     })
-    it('Start publishing', () => {
+    it('Start publishing and close browsers tab', () => {
         publisherMainPage.startPublishing()
         publisherMainPage.checkIsPublishingStarted()
         cy.wait(2000)
     })
-    it('Visit the player page', () => {
+    it('Visit the player page on a new tab', () => {
         playerMainPage.openPlayerPage()
         playerMainPage.checkIsPlayerPageOpened()
         cy.wait(3000)
@@ -35,12 +35,12 @@ describe('Check is screen sharing failed case', () => {
         cy.wait(2000)
         playerMainPage.checkIsPlayerPageOpened()
     })
-    it('Check screen shared', () => {
+    it('Check screen sharing failure', () => {
         cy.wait(2000)
         playerMainPage.checkIsScreenShared()
         cy.wait(2000)
     })
-    it('Check from server',()=> {
+    it('Check screen sharing failure from server',()=> {
         serverLoginPage.login('test@antmedia.io','testtest')
         serverLoginPage.checkIsLoggedIn()
         webRTCPage.goToWebRTCApp()

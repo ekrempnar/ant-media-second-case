@@ -1,5 +1,6 @@
 {
-    "reporter": "cypress-multi-reporters",
+  "baseUrl": "https://swapi.py4e.com/api/",  
+  "reporter": "cypress-multi-reporters",
     "reporterOptions": { 
       "reporterEnabled": "mochawesome",
       "mochawesomeReporterOptions": {
@@ -16,7 +17,10 @@
       "chromeSecurity": false
     },
     "video": false,
-
+    "retries": {
+      "runMode": 1,
+      "openMode": 1
+    },
   
     "env": {
       "browserPermissions": {
